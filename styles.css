@@ -1,0 +1,96 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+header{
+    font-size: 1.75rem;
+}
+
+/*remember:
+    em: relative to the 'current parent element' font size
+    rem: relative to the 'root' element*/
+
+
+#main-doc{
+    position: absolute;
+    margin-left: 310px;
+}
+
+/*THIS IS WHY THIS WORKS!!
+    So the navbar only works because I literally give it space. The 'margin-left' above gives the navbar space
+    and forces the main document to the right*/
+
+section{
+    display: block;
+}
+
+.table-code{
+    display: block;
+     background-color: #e6e3e3;
+    border: 2px solid black;
+    overflow: hidden;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+article{
+    text-align: left;
+    margin: 25px;
+}
+
+figure.header-list{
+    margin: 0 auto;
+    max-width: 400px;
+    background-color: #e6e3e3;
+    border: 2px solid #000000;
+}
+
+figcaption{
+    padding-left: 10%;
+}
+
+
+#navbar{
+    display: block;
+    width:300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width:250px;
+    border-right: 2px solid black;
+}
+
+#navbar a{
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: normal;
+    color: #5c5b5b;
+}
+
+#navbar a:hover{
+    color: lightgrey;
+}
+
+
+.nav-link{
+    border-top: 1px solid black;
+    width: 100%;
+    font-size: 1.25rem;
+    text-decoration: none;
+
+}
+
+.ul-nav{
+    padding-left: 0px;
+    /*overcome the browsers automatic paddint left*/
+}
+
+p{
+    color: #5c5b5b;
+
+}

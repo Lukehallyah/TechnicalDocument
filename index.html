@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav id="navbar">
+      <header>HTML and CSS</header>
+        <ul class="ul-nav">
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#div">DIV</a></li>
+        <li><a href="#table">TABLE</a></li>
+        <li><a href="#header">HEADER</a></li>
+      </ul>
+    </nav>
+
+    <!--Each nav bar element must have # before the id for it to work-->
+
+    <main id="main-doc">
+        <section class="main-section" id="html">
+            <header>What is HTML?</header>
+            <article>
+            <p>HTML is known as HyperText Markup Language and is the basic building blocks of web pages in web development.
+                It provides the basic structure of a web page from the headings to the paragraphs and even such things as images
+                and links: html has it all. By itself, html is a very powerful tool and is the foundational building blocks of 
+                everything you see on a website, whether using mobile or pc, html is vital to the functioning of a website.
+            </p>
+            <p>As important as HTML is to the building of a website however, it's usefulness would be fairly bland without its
+                cousin and close brother: CSS. But on its own, you can do many things with html such as building quizzes and sign
+                in forms, building informative webpages, navigation bars, tables, and forms to submit and so many more things 
+                that so many take for granted online every day. Everything you see online, if it has anything to do with Web 
+                development, will have HTML as its foundation. It is vital to the function of a web page so that it cannot exist
+                without this foundation.
+            </p>
+            </article>
+
+            <!--LESSON: By placing the actual content in <article>, I can make a difference between headers
+                and the content. It makes it easier to do margins and things-->
+
+        </section>
+        <section class="main-section" id="css">
+            <header>What is CSS?</header>
+            <article>
+            <p>CSS aka Cascading Style Sheets, is where websites really begin to shine. It's been said that if HTML
+                is the "skeleton" of a website, then CSS is the muscles and the skin: it really is that vital to the 
+                aesthetics of a web page. CSS provides structure and elegance to your HTML and works hand in hand with 
+                it: changing the font style and the size, where elements appear on a page, how large the heading and how
+                things are styled, sizing images and other elements, providing color to anything from fonts to backgrounds to
+                borders and anything in between, and really anything you could ever need to do to brighten up the appearence 
+                of a web page, CSS is where it's at.
+            </p>
+            <p>When styling your HTML, it's important to keep track of your classes and ids of your elements and there are so 
+                many ways to choose those elements. In CSS these are called "selectors". In this way you can really pin-point 
+                the elements exactly with CSS and customize your web page however you want and in any style. By utilizing selectors,
+                a web developer can add a unique touch to every website, adapting to the ever changing needs of the customer to
+                provide the very best experience possible.
+            </p>
+            </article>
+        </section>
+
+
+        <section class="main-section" id="div">
+            <header>What is a Div?</header>
+            <article>
+            <p>So what is this thing called a div and why is it important in building a web page? A div is a "container"
+                in which things like paragraphs and sentences are placed. It provides a sort of "box" into which all manner
+                of elements are placed in HTML, and then later styled in CSS. In this way a web developer can design sections
+                of their web pages to be as aesthetically pleasing as possible. 
+            </p>
+            </article>
+        </section>
+        
+        
+        <section class="main-section" id="table">
+            <header>What is a table and its basic elements?</header>
+            <article>
+            <p>Ever wanted to make a table like the ones you see in Excel but don't want to have to learn it?
+                With HTML and CSS to style it, you can create your very own tables with your own colors, fonts, styles,
+                and basically anything else that you could need tailor-made to your own needs. With the right understanding
+                of HTML and CSS, you could very well create your own style and fashion of table to lay out information in 
+                a stylish yet functional way.
+            </p>
+            <figure>
+                <figcaption>Basic Elements for Tables</figcaption>
+                <ul>
+                    <li>Table</li>
+                    <li>thead</li>
+                    <li>tbody</li>
+                    <li>tr</li>
+                    <li>th</li>
+                    <li>td</li>
+                </ul>
+            </figure>
+            <p>First you have to use the table element to show the browser that you're creating a table. Inside of this,
+                you'll have the thead (or table header) and your tbody (or table body). These are the basic building blocks
+                of a table. The thead acts as the header for the columns of a table, providing a structure, while the tbody 
+                is where your tr (or table rows) will store your th (description of that row) and your td (table data cell). tbody 
+                is mostly your horizontal cells of your table with the thead holding the "headers" of those cells.
+            </p>
+            <p>The basic syntax looks something like this:</p>
+           
+            <figure class="table-code">
+                <figcaption>Code</figcaption>
+            <pre><code>
+                &lt;table&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;&lt;/td&gt;
+                            &lt;th&gt;&lt;/th&gt;
+                            &lt;th&gt;&lt;/th&gt;
+                            &lt;th&gt;&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;&lt;/th&gt;
+                            &lt;td&gt;&lt;/td&gt;
+                            &lt;td&gt;&lt;/td&gt;
+                            &lt;td&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;table&gt;
+            </code></pre>
+           </figure>
+       
+           <p>The thead acting as "header" columns to provide some context to the provided content. The tbody
+            holding the actual data cells of your table. Tables are useful for all kinds of things and can be used for: 
+            expense reports, product comparisons, calendars, financial reports, shedules, statistical data and so much more. A
+            truly versatile tool for any aspiring developer and useful in many kinds of situations.
+           </p>
+            </article>
+        </section>
+        
+        <section class="main-section" id="header">
+            <header>Header elements: h1 through h6</header>
+            <article>
+            <p>So you've sat down and decided kind of project you wish to create, and you start your first html
+                document and you're excited! But how do you differentiate between headers and different sections? How
+                do you make one header larger than another or to make one more important or noticeable than another title?
+                This is where headers come in and there are 6 basic types that can be used.
+            </p>
+            <p>This is where headers come in. Using h1 thru h6, the sizes go from the largest (h1) to the smallest (h6)
+                and allow the web developer to create headers that stand out from others. They can also be assigned classes
+                like many elements, and the font size changed and modified using CSS. Header elements really bring that 
+                customization to a web page that brings everything together. This allows different topics to be grouped in 
+                sections on the webpage making it easier for users to scroll and process information.
+            </p>
+            
+            <figure class="header-list">
+                <figcaption>h1 thru h6, Biggest to Smallest</figcaption>
+                <ul>
+                    <li>&lt;h1&gt;</li>
+                    <li>&lt;h2&gt;</li>
+                    <li>&lt;h3&gt;</li>
+                    <li>&lt;h4&gt;</li>
+                    <li>&lt;h5&gt;</li>
+                    <li>&lt;h6&gt;</li>
+                </ul>
+            </figure>
+            </article>
+        </section>
+        
+    </main>
+</body>
+
+
+
+
+</html>
