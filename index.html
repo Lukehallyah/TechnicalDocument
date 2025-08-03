@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>TechnicalProject</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,18 +11,18 @@
     <nav id="navbar">
       <header>HTML and CSS</header>
         <ul class="ul-nav">
-        <li class="nav-link"><a href="#html">HTML</a></li>
-        <li class="nav-link"><a href="#css">CSS</a></li>
-        <li class="nav-link"><a href="#div">DIV</a></li>
-        <li class="nav-link"><a href="#table">TABLE</a></li>
-        <li class="nav-link"><a href="#header">HEADER</a></li>
+        <li><a class="nav-link" href="#html">What is HTML?</a></li>
+        <li><a class="nav-link" href="#css">What is CSS?</a></li>
+        <li><a class="nav-link" href="#div">What is a Div?</a></li>
+        <li><a class="nav-link" href="#table">What is a table and its basic elements?</a></li>
+        <li><a class="nav-link" href="#header">Header elements: h1 through h6</a></li>
       </ul>
     </nav>
 
     <!--Each nav bar element must have # before the id for it to work-->
 
     <main id="main-doc">
-        <section class="main-section" id="html">
+        <section class="main-section" id="What_is_HTML?">
             <header>What is HTML?</header>
             <article>
             <p>HTML is known as HyperText Markup Language and is the basic building blocks of web pages in web development.
@@ -43,7 +43,7 @@
                 and the content. It makes it easier to do margins and things-->
 
         </section>
-        <section class="main-section" id="css">
+        <section class="main-section" id="What_is_CSS?">
             <header>What is CSS?</header>
             <article>
             <p>CSS aka Cascading Style Sheets, is where websites really begin to shine. It's been said that if HTML
@@ -64,7 +64,7 @@
         </section>
 
 
-        <section class="main-section" id="div">
+        <section class="main-section" id="What_is_a_Div?">
             <header>What is a Div?</header>
             <article>
             <p>So what is this thing called a div and why is it important in building a web page? A div is a "container"
@@ -72,11 +72,46 @@
                 of elements are placed in HTML, and then later styled in CSS. In this way a web developer can design sections
                 of their web pages to be as aesthetically pleasing as possible. 
             </p>
-            </article>
+            <figure class="div">
+              <figcaption>This is a Div:</figcaption>
+                 <pre><code>
+                &lt;div&gt;
+                    &lt;h1&gt;&lt;/h1&gt;
+                    &lt;p&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </figure>
+            <p>Oftentimes Divs will be assigned "classes" for the purposes of styling. It singles out that 
+                "box" and says "You there! Yes you, I want you over here" and so on. Making it relatively easy to
+                style a webpage. An example of giving a div a class is below:</p>
+            
+            <figure class="div">
+              <figcaption>Div with a Class:</figcaption>
+                 <pre><code>
+                &lt;div class="container1"&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </figure>
+            <p>The CSS would look something like this if you wanted to target that particular "container1"
+                created above
+            </p>
+
+            <figure class="div">
+              <figcaption>CSS to target this class:</figcaption>
+                 <pre><code>
+                    .container1{
+                        width: 100%;
+                        margin: auto;
+                    }
+                </code></pre>
+            </figure>
+            <p>This would make the div container1 take up 100% of the available space, and make the 
+                margins automatic, meaning if all else is equal it would be centered on the page.
+            </p>
         </section>
         
         
-        <section class="main-section" id="table">
+        <section class="main-section" id="What_is_a_table_and_its_basic_elements?">
             <header>What is a table and its basic elements?</header>
             <article>
             <p>Ever wanted to make a table like the ones you see in Excel but don't want to have to learn it?
@@ -136,7 +171,7 @@
             </article>
         </section>
         
-        <section class="main-section" id="header">
+        <section class="main-section" id="Header_elements:_h1_through_h6">
             <header>Header elements: h1 through h6</header>
             <article>
             <p>So you've sat down and decided kind of project you wish to create, and you start your first html
@@ -172,3 +207,13 @@
 
 
 </html>
+
+<!--FOR TOMORROW
+    I managed to make a github repository for this one. It's almost going to be like a portfolio booster.
+    Almost lost my file due to one of those touchpad 'I don't know what just happened' moments.
+    
+    Take a look at the nav-link, it's supposed to be in the <a> a class for it. It's going to take away
+        the border-top property and so keep a eye on that
+        
+        Also remember to look and create LESSON for when i have to summarize to myself what I've learned.
+        Going to go in the readme file for quick reference-->

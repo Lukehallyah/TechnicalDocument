@@ -6,11 +6,9 @@ html{
 header{
     font-size: 1.75rem;
 }
-
 /*remember:
     em: relative to the 'current parent element' font size
     rem: relative to the 'root' element*/
-
 
 #main-doc{
     position: absolute;
@@ -27,7 +25,7 @@ section{
 
 .table-code{
     display: block;
-     background-color: #e6e3e3;
+    background-color: #e6e3e3;
     border: 2px solid black;
     overflow: hidden;
     position: relative;
@@ -40,7 +38,7 @@ article{
     margin: 25px;
 }
 
-figure.header-list{
+figure.header-list, .div{
     margin: 0 auto;
     max-width: 400px;
     background-color: #e6e3e3;
@@ -77,7 +75,7 @@ figcaption{
 }
 
 
-.nav-link{
+.ul-nav li{
     border-top: 1px solid black;
     width: 100%;
     font-size: 1.25rem;
